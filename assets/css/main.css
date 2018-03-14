@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	#bannericon:before {
+		background-image: url(images/toverlay.png);
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {

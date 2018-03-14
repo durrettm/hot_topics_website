@@ -44,7 +44,7 @@
 					<div class="container">
 						<header class="major">
 							<h2>The App</h2>
-							<p>Ipsum dolor feugiat aliquam tempus sed magna lorem consequat accumsan</p>
+							<p>Visualization Workflow for Topic Models</p>
 						</header>
 						<div class="row 150%">
 							<div class="4u 12u$(medium)">
@@ -52,8 +52,36 @@
 								<!-- Sidebar -->
 									<section id="sidebar">
 										<section>
+											<a href="metadata.html" class="image fit"><img src="images/metadata_banner.jpg" alt="" /></a>
+											<h3>Metadata</h3>
+											<p>The metadata tab of Loquela allows the user to get an overview of the data they have to work with. It states some of the important parameters that were given. The user may look at the stopwords or the words in order of frequency for each topic. The user may also nickname each topic based on their intuition on what it's about.</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="metadata.html" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="wordcloud.html" class="image fit"><img src="images/wordcloud_banner.jpg" alt="" /></a>
+											<h3>Wordcloud</h3>
+											<p>The wordcloud tab of Loquela creates wordclouds for topics of the user's choosing. It displays
+											the words in a topic side by side, increasing the size of the most prevalent ones. Viewing it can
+											offer insight into what a topic is "about" and which words are connected to one another. </p>
+											<footer>
+												<ul class="actions">
+													<li><a href="wordcloud.html" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="heatmap.html" class="image fit"><img src="images/heatmap_banner.jpg" alt="" /></a>
 											<h3>Heatmap</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit..</p>
+											<p>The heatmap tab of Loquela displays three different heatmaps, allowing the
+												user to directly compare the prevalence of three topics over the course of a corpus.
+												The darkness of the bar at any point represents the number of words assigned to the selected
+												topic in that area of the text.</p>
 											<footer>
 												<ul class="actions">
 													<li><a href="heatmap.html" class="button">Learn More</a></li>
@@ -62,9 +90,13 @@
 										</section>
 										<hr />
 										<section>
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+											<a href="annotated-text.html" class="image fit"><img src="images/annotated-text_banner.jpg" alt="" /></a>
 											<h3>Annotated Text</h3>
-											<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+											<p>The annotated text tab features a full re-creation of the original corpus, allowing
+												the user to examine topics in the context of the corpus itself. Hover over any word to
+												dynamically highlight all words in that topic, or select up to 3 topics for fixed highlighting.
+											If the original input document included punctuation and capitalization (i.e. a .txt file), then these
+											features get loaded into the annotated text as well. </p>
 											<footer>
 												<ul class="actions">
 													<li><a href="annotated-text.html" class="button">Learn More</a></li>
@@ -78,19 +110,26 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>Dolore Amet Consequat</h3>
-										<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-										<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-										<h3>Sed Magna Ornare</h3>
-										<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus.</p>
+										<a href="#" class="image fit"><img src="images/app_banner.jpg" alt="" /></a>
+										<h3>Objective</h3>
+										<p>Our main objective was to keep in mind what a history professor might want out of our visualization. We asked a real history professor to get us on the right path. In addition, we researched different visualization possibilities for topic models. We selected the tools we felt would best allow a user to dive deep into the details of the topic models as well as inspect the more general trends across the corpus.</p>
+										<h3>The Result</h3>
+										<p>We settled on four visualizations. The metadata is important in order to gain an understanding of the parameters and scope of your input data. The wordcloud is important to verify the quality of the topics and begin to understand what they're about. The heatmap is important in order to discover where topics occur in the corpus and which topics co-occur. The annotated text tab is important to establish what is happening to the words themselves in terms of topic assignments.</p>
+										<h3>A Workflow</h3>
+										<p>As you might imagine, the tabs are laid out in such a way to promote a productive workflow for exploring topic models.</p>
 										<ul>
-											<li>Faucibus orci lobortis ac adipiscing integer.</li>
-											<li>Col accumsan arcu mi aliquet placerat.</li>
-											<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-											<li>Blandit massa non blandit tempor interdum.</li>
-											<li>Lacinia mattis arcu nascetur lobortis.</li>
+											<li>The user first uploads their json file from the output of LDA. Then, they look at metadata to check whether they can immediately recognize and nickname any topics.</li>
+											<li>Next, they look at the wordcloud to get an even better picture of what the topics are. They can return to metadata to nickname newly discovered topics.</li>
+											<li>Next, the user may proceed to the heatmap tab, where interesting patterns may reveal themselves. Sometimes topics will occur in the corpus exactly where they are expected to. In other cases, the user may discover surprising patterns of occurrence.</li>
+											<li>Finally, the user arrives at the annotated text tab, where they can see the words of the text and how each is assigned to topics. Here, the user can cite specific areas of the text which contribute to patterns in the topic model.</li>
 										</ul>
+										<h3>Tab Integration</h3>
+										<p>The heatmap tab is integrated with the annotated text tab so that clicking in any heatmap takes you to that location of the text in the annotated text tab. Conversely, clicking on a tagged topic word in the annotated text tab will take you to the heatmap tab with the appropriate topic heatmap showing and with a line indicating the location of that word.</p>
+										<img src="images/integration.gif" width="500" alt="" />
+										<p></p>
+										<h3>Config File Generator</h3>
+										<p>On the start screen of Loquela, the user may choose to generate a configuration file for LDA. Loquela provides a form with all necessary parameters, preventing any illegal input. Submitting this form prompts Loquela to generate the appropriate configuration file which may be passed into LDA to run the algorithm with parameters of the user's choosing.</p>
+										<img src="images/configgen.jpg" width="500" alt="" />
 									</section>
 
 							</div>
