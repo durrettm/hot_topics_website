@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>LDA - Loquela</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1 id="logo"><a href="index.html">Loquela</a></h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="the-algorithm.html">The Algorithm</a></li>
+                <li>
+                    <a href="the-app.html">The App</a>
+                    <ul>
+                        <li><a href="metadata.html">Metadata</a></li>
+                        <li><a href="wordcloud.html">Wordcloud</a></li>
+                        <li><a href="heatmap.html">Heatmap</a></li>
+                        <li><a href="annotated-text.html">Annotated Text</a></li>
+                    </ul>
+                </li>
+                <li><a href="the-team.html">The Team</a></li>
+                <li><a href="the-code.html" class="button special">The Code</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main" class="wrapper style1">
+        <div class="container">
+            <header class="major">
+                <h2>Latent Dirichlet Allocation</h2>
+                <p>Assign a new topic to a word based on existing text assignments.</p>
+            </header>
+
+            <!-- Content -->
+            <section id="content">
+                <a href="#" class="image fit"><img src="images/LDA-corpus-load-in.PNG" alt="" /></a>
+                <p align="center"><i>A corpus can be stored as a nested array of documents containing words in the order in which they occur in the text.</i></p>
+                <h3>Topic De-Assignment</h3>
+                <p>The topic assignment is removed from one word at a time. The likelihood that the word is assigned to any given topic will then be calculated. Here, probability of assignment is represented as the area of a 2D graph.</p>
+                <p><img src="images/LDA-deassignment.gif" width="500" alt=""></p>
+                <h3>Probabilistic Selection</h3>
+                <p>Once the probability of assignment to every topic has been calculated, a new topic is randomly selected.</p>
+                <p><img src="images/LDA-topic-dart.gif" width="500" alt=""></p>
+                <h3>Topic Updating</h3>
+                <p>The word is then assigned the newly-determined topic and re-integrated into the corpus. Appropriate topic assignment tracking variables are likewise updated, and the next word in the corpus is de-assigned.</p>
+                <p><img src="images/LDA-word-replacement.gif" width="500" alt=""></p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/SpoonierBard/loquela" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="mailto:bardrswallow@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; Loquela. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
